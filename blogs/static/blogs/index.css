@@ -1,0 +1,129 @@
+#main-navigation{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    background: linear-gradient(to right top,#0045ff , #5a93f8);
+}
+#main-navigation a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+#main-navigation a:hover,
+#main-navigation a:active{
+    color:white ;
+
+}
+#main-navigation h1 a:hover,
+#main-navigation h1 a:active{
+    color: white;
+}
+#welcome{
+    background: linear-gradient(to right top,coral,gold);
+}
+#welcome header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+#welcome img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border: 5px solid white;
+    background: deeppink;
+    transform: rotatez(-5deg);
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+#welcome h2{
+    font-size: 3.5rem;
+    margin: 0 0 0 2rem;
+    color: black;
+    width: 10rem;
+}
+#welcome p{
+    color: darkred;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#latest-posts{
+    background-color: aqua;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60rem;
+    margin: 10px auto;
+    box-shadow: 1px 1px 12px rgba(0,0,0,.4);
+}
+#latest-posts h2{
+    text-align: center;
+
+}
+#latest-posts ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#latest-posts li{
+    flex: 1;
+
+}
+#about {
+    text-align: center;
+    padding: 3rem;
+    background-color: maroon;
+    margin-top: 5rem;
+
+}
+#about h3{
+    font-size: 3rem;
+    color: aquamarine;
+
+}
+#about p{
+    font-size: 1.5rem;
+    color: aquamarine;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.post a{
+    text-decoration: none;
+    color: black;
+    transition: all ease .2s;
+    padding: 1rem;
+}
+.post a:active,
+.post a:hover{
+    transform: scale(1.1);
+    background-color: greenyellow;
+    color: white;
+}
+.post img{
+    width: 200px;
+    border: 20px;
+}
+.post a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+

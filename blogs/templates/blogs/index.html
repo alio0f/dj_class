@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_page %}
+    Hello users
+{% endblock %}
+
+{% block header_refrence %}
+<link rel="stylesheet" href="{% static 'blogs/index.css' %}">
+{% endblock %}
+
+{% block content_page %}
+{#    <h1>welcome to mywebsite</h1>#}
+{#    {{ a }}#}
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blogs/images/c#.png' %}" alt="programs">
+            <h2>web site</h2>
+        </header>
+    <p>hello my name is hajiha im a student</p>
+    </section>
+
+
+    <section id="latest-posts">
+        <h2>Latest posts</h2>
+{#        <ul>#}
+{#            <li><a href="">Test</a></li>#}
+{#            <li><a href="">Test</a></li>#}
+{#            <li><a href="">Test</a></li>#}
+{#        </ul>#}
+    <ul>
+        {{% for post in latest_posts %}
+            <li>
+                {% include 'blogs/includes/post.html' %}
+            </li>
+
+        {% endfor %}
+
+    </ul>
+
+    </section>
+
+
+    <section id="about">
+        <h3>explanation about the site</h3>
+        <p>the site is  include the training of the programing language</p>
+        <P>the programin languages such as python,django,html,css ...</P>
+
+
+    </section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title_page %}
+            my website
+        {% endblock %}
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    {% block header_refrence %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<header id="main-navigation">
+    <h1><a href="{% url 'starting_page' %}">mysite</a></h1>
+    <nav><a href="{% url 'post_page' %}">All post</a> </nav>
+</header>
+
+    {% block content_page %}
+        welcome to website
+    {% endblock %}
+
+    {% block footer_refrence %}
+
+    {% endblock %}
+
+</body>
+</html>
